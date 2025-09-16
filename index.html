@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Food</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">Order<span>Food</span></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Order</a></li>
+                <li><a href="#">Food</a></li>
+                <li><a href="#">Restaurant</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        <button class="menu-btn">
+            <img src="/assets/icons/menu-bar.png" alt="Menu Icon" >
+        </button>
+
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>LOREM IPSUM</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                id est vitae dolor rhoncus tristique. Maecenas metus quam,
+                rhoncus euismod lorem in, sollicitudin viverra eros. Donec
+                dictum luctus quam ut tristique. Curabitur nec faucibus purus.
+                Quisque congue sem nec justo mollis, in tincidunt erat pretium.
+                Sed pulvinar, massa ac porta viverra.
+            </p>
+            <a href="#" class="btn-primary">Click Me</a>
+        </div>
+        <div class="hero-image">
+            <img src="/assets/images/pexels-robin-stickel-70497.jpg" alt="Hero Image" loading="lazy">
+        </div>
+    </section>
+
+<!-- Content Section -->
+<section class="content-section">
+    <div class="image-grid">
+        <img src="assets/images/pexels-rachel-claire-6752433.jpg" alt="Image 1" class="img1" loading="lazy">
+        <img src="assets/images/pexels-eva-bronzini-6141651.jpg" alt="Image 2" class="img2" loading="lazy">
+        <img src="assets/images/pexels-mister-mister-3434523.jpg" alt="Image 3" class="img3" loading="lazy">
+    </div>
+
+    <div class="text-box">
+        <small>LOREM IPSUM</small>
+        <h2>LOREM IPSUM<br>SET ADEMIR</h2>
+        <a href="#" class="text-link">
+            Click
+            <img src="assets/icons/icons8-arrow-30.png" alt="Arrow Icon" class="arrow-icon">
+        </a>
+
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">© <span id="year"></span> Anuj Jadhav — Assignment</div>
+    </footer>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
+
+</body>
+
+</html>
